@@ -4,7 +4,7 @@ import Layout from "./layout/Layout";
 
 function App() {
   return (
-    <Router>
+    <Router base="/">
       <Layout>
         <Routes>
           <Route path="/" element={<Npw />} />
