@@ -4,8 +4,8 @@ import Plot from "react-plotly.js";
 import WaferMap from "./WaferMap";
 import BoxPlot from "./BoxPlot";
 import { SystemContext } from "../../context/SystemContext";
-import axios from "axios";
 import { Tabs, Tab } from "@mui/material";
+import { generateBoxPlotBase64, generatePieChartBase64 } from "../../service/generateChart";
 
 const DefectChart = (props) => {
   const { data } = props;
@@ -59,13 +59,11 @@ const DefectChart = (props) => {
   const chartRef = useRef(null);
   const { state, dispatch } = useContext(SystemContext);
 
-  //fetch images
+  //generate images
   const getDefectMapImage = async (coords) => {
     try {
-      const res = await axios.post("http://127.0.0.1:8000/chart/pie/", {
-        numbers: coords.y,
-      });
-      const newImage = `data:image/png;base64,${res.data.image}`;
+      const newImage = await generatePieChartBase64(coords.y);
+      console.log('pie', newImage)
       setWaferMapImages((preImages) => [...preImages, newImage]);
     } catch (e) {
       console.error("Error fetching wafer map image:", e);
@@ -73,10 +71,8 @@ const DefectChart = (props) => {
   };
   const getDefectBoxPlotImage = async (coords) => {
     try {
-      const res = await axios.post("http://127.0.0.1:8000/chart/box/", {
-        numbers: coords.y,
-      });
-      const newImage = `data:image/png;base64,${res.data.image}`;
+      const newImage = await generateBoxPlotBase64(coords.y);
+      console.log('box',newImage)
       setBoxPlotImages((preImages) => [...preImages, newImage]);
     } catch (e) {
       console.error("Error fetching box plot image:", e);
@@ -84,10 +80,7 @@ const DefectChart = (props) => {
   };
   const getDefectBoxPlotSummaryImage = async (count) => {
     try {
-      const res = await axios.post("http://127.0.0.1:8000/chart/box/", {
-        numbers: count,
-      });
-      const newImage = `data:image/png;base64,${res.data.image}`;
+      const newImage = await generateBoxPlotBase64(count);
       setBoxPlotSummaryImage(newImage);
     } catch (e) {
       console.error("Error fetching box plot image:", e);
@@ -470,7 +463,7 @@ const DefectChart = (props) => {
               <BoxPlot image={boxPlotSummaryImage} isSummary={true} />
             </div>
           )}
-           {tabValue === 1 && (
+          {tabValue === 1 && (
             <div className="flex flex-wrap gap-x-4 gap-y-2 mx-auto">
               {boxPlotImages.map((v, i) => (
                 <BoxPlot
