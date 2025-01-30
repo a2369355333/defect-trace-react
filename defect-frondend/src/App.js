@@ -8,7 +8,6 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Npw />} />
-          <Route path="/npw" element={<Npw />} />
         </Routes>
       </Layout>
     </Router>
