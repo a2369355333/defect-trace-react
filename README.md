@@ -9,7 +9,7 @@
 初始畫面:<br> 
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/b4b7c12d-5684-4563-a2d4-36e7745ef926" />
 <br><br><br> 
-STEP1: 選取機台後:<br> 
+<h2>STEP1: 選取機台後:</h2><br> 
 1.左圖為X軸:日期 Y軸:不良率數量<br> 
 2. 右圖分為三個TAB:
    <br> 
@@ -27,7 +27,7 @@ STEP3: 點選圖中眼睛可以放大圖，以便觀察點的分佈<br>
 <img width="1258" alt="image" src="https://github.com/user-attachments/assets/2609c398-933e-4bb9-846a-9fa529e1075d" />
 <br><br><br> 
 STEP4: 點選圖中右上角可以刪除該日期圖示，Box plot與 Wafer map兩個圖刪掉彼此不影響<br>
-下圖中盒鬚圖刪掉兩個，只有一個圖 => 晶圓圖依舊是三個圖 =>點選重複日期後盒鬚圖會在新增回來，晶圓圖則不會重複出現 <br>
+下圖中盒鬚圖刪掉兩個: 只有一個圖 => 晶圓圖依舊是三個圖 (點選重複日期後盒鬚圖會在新增回來，晶圓圖則不會重複出現) <br>
 <img width="1256" alt="image" src="https://github.com/user-attachments/assets/f2e9710b-b021-44b8-a38b-b592ca5b44e5" />
 <img width="1250" alt="image" src="https://github.com/user-attachments/assets/4ae2a54e-384c-4840-91d3-5bbad8269f0a" />
 <br><br><br> 
