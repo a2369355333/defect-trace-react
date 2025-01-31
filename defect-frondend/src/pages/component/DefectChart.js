@@ -450,7 +450,7 @@ const DefectChart = (props) => {
               }}
             />
             <Tab
-              label="Wafer_Map"
+              label="Wafer_Map_Date"
               style={{
                 color: "#1976d2",
               }}
