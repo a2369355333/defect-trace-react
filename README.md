@@ -9,7 +9,7 @@
 初始畫面:<br> 
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/b4b7c12d-5684-4563-a2d4-36e7745ef926" />
 <br><br><br> 
-<h2>STEP1: 選取機台後:</h2><br> 
+<h4>STEP1: 選取機台後:</h4>
 1.左圖為X軸:日期 Y軸:不良率數量<br> 
 2. 右圖分為三個TAB:
    <br> 
