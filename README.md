@@ -1,6 +1,6 @@
 [點擊這裡查看網站_Wafer-Defect-Trace](https://a2369355333.github.io/defect-trace-react/)
 
-專案名稱: Wafer Defect Trace <br>
+<h2>專案名稱: Wafer Defect Trace</h2> 
 追蹤目的: <br>
 1.為了改善良率，利用沒生產的控片從每台機台拿到不良點分布再去對照原本的不良品不良點分布 <br>
 2.從分佈點中找出相似的，就能得知這個不良品是從這台機台生產出來<br> 
@@ -27,7 +27,7 @@
 <img width="1258" alt="image" src="https://github.com/user-attachments/assets/2609c398-933e-4bb9-846a-9fa529e1075d" />
 <br><br><br> 
 <h4>STEP4: 點選圖中右上角可以刪除該日期圖示，Box plot與 Wafer map兩個圖刪掉彼此不影響</h4>
-下圖中盒鬚圖刪掉兩個: 只有一個圖 => 晶圓圖依舊是三個圖 (點選重複日期後盒鬚圖會在新增回來，晶圓圖則不會重複出現) <br>
+下圖中盒鬚圖刪掉兩個: 只有一個圖 => 晶圓圖依舊是三個圖 (點選重複日期後盒鬚圖會再新增回來，晶圓圖則不會重複出現) <br>
 <img width="1256" alt="image" src="https://github.com/user-attachments/assets/f2e9710b-b021-44b8-a38b-b592ca5b44e5" />
 <img width="1250" alt="image" src="https://github.com/user-attachments/assets/4ae2a54e-384c-4840-91d3-5bbad8269f0a" />
 <br><br><br> 
