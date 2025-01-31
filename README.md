@@ -8,8 +8,8 @@
 <br>
 初始畫面:<br> 
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/b4b7c12d-5684-4563-a2d4-36e7745ef926" />
-<br> 
-STEP1選取機台後:<br> 
+<br><br> 
+STEP1: 選取機台後:<br> 
 1.左圖為X軸:日期 Y軸:不良率數量<br> 
 2.右圖分為三個TAB: <br> 
   Box_Plot_Summary: 這台機台這段時間總共defect數量分佈<br> 
