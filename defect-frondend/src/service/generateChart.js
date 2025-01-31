@@ -10,8 +10,10 @@ export const generateBoxPlotBase64 = async (numPoints) => {
         type: "box",
         boxpoints: "all",
         jitter: 0.3,
-        pointpos: -1.8,
-        marker: { color: "red", size: 6 },
+        pointpos: 0,
+        fillcolor: "rgba(0, 0, 255, 0.1)", // 設定箱型圖為半透明藍色
+        marker: { color: "red", size: 6 }, // 設定散布點顏色為紅色
+        line: { color: "blue" },
       },
     ];
 
@@ -20,11 +22,11 @@ export const generateBoxPlotBase64 = async (numPoints) => {
       yaxis: { range: [0, 50] },
     };
 
-    // 使用 Plotly.newPlot 方法生成圖表
+     // use Plotly.newPlot to generate chart
     const chartDiv = document.createElement("div");
     await Plotly.newPlot(chartDiv, data, layout);
 
-    // 使用 Plotly.toImage 生成 Base64 圖片資料
+    // use Plotly.toImage to generate Base64 image data
     const imgData = await Plotly.toImage(chartDiv, {
       format: "png",
       width: 600,
@@ -43,7 +45,8 @@ export const generatePieChartBase64 = async (numPoints) => {
       { length: numPoints },
       () => Math.random() * 2 * Math.PI
     );
-    const radii = Array.from({ length: numPoints }, () => Math.random() * 10);
+    //on purpose to let red points not to be out of circle (max r = 9)
+    const radii = Array.from({ length: numPoints }, () => Math.min(Math.random() * 10, 9));
 
     const x = radii.map((r, i) => 10 + r * Math.cos(angles[i]));
     const y = radii.map((r, i) => 10 + r * Math.sin(angles[i]));
@@ -72,17 +75,17 @@ export const generatePieChartBase64 = async (numPoints) => {
           x1: 20,
           y1: 20,
           fillcolor: "rgba(200, 200, 200, 0.5)",
-          line: { color: "rgba(200, 200, 200, 0.4)", width: 10 },
+          line: { width: 0 },
         },
       ],
     };
 
     const chartDiv = document.createElement("div");
 
-    // 使用 Plotly.newPlot 方法生成圖表
+    // use Plotly.newPlot to generate chart
     await Plotly.newPlot(chartDiv, data, layout);
 
-    // 使用 Plotly.toImage 生成 Base64 圖片資料
+    // use Plotly.toImage to generate Base64 image data
     const imgData = await Plotly.toImage(chartDiv, {
       format: "png",
       width: 600,

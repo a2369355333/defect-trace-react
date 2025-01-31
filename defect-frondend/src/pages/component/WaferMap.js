@@ -17,13 +17,19 @@ const WaferMap = (props) => {
       <div>
         <button
           className="absolute top-0 right-0 rounded-full hover:bg-gray-100 focus:bg-gray-200 focus:outline-none focus:ring-0"
-          onClick={onRemove}
+          onClick={(e) => {
+            onRemove();
+            e.currentTarget.blur(); 
+          }}
         >
           <Close className="text-gray-400" />
         </button>
         <button
           className="absolute bottom-0 right-0.5 rounded-full hover:bg-gray-100 focus:bg-gray-200 focus:outline-none focus:ring-0"
-          onClick={() => setIsDialogOpen(true)}
+          onClick={(e) => {
+            setIsDialogOpen(true);
+            e.currentTarget.blur(); 
+          }}
         >
           <Visibility className="text-gray-400" />
         </button>
