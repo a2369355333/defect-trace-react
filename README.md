@@ -11,11 +11,10 @@
 <br><br><br> 
 <h4>STEP1: 選取機台後:</h4>
 1.左圖為X軸:日期 Y軸:不良率數量<br> 
-2. 右圖分為三個TAB:
-   <br> 
-&nbsp;Box_Plot_Summary: 這台機台這段時間總共 defect 數量分佈 <br>
-&nbsp;Box_Plot_Date: 可以切時間找出該日期數量不良點分佈的盒鬚圖 <br>
-&nbsp;Wafer_Map_Date: 可以切時間找出該日期不良點分佈的晶圓圖 <br>
+2. 右圖分為三個TAB:<br> 
+&nbsp;&nbsp; **Box_Plot_Summary**: 這台機台這段時間總共 defect 數量分佈 <br>
+&nbsp;&nbsp; **Box_Plot_Date**: 可以切時間找出該日期數量不良點分佈的盒鬚圖 <br>
+&nbsp;&nbsp; **Wafer_Map_Date**: 可以切時間找出該日期不良點分佈的晶圓圖 <br>
 <img width="1258" alt="image" src="https://github.com/user-attachments/assets/c035b58c-060b-4e96-ab02-e05552c6606b" />
 <br><br><br> 
 <h4>STEP2: 如圖中箭頭，點選不良點數量會同時產生盒鬚圖跟晶圓圖(Defect Count 等於0不會產生圖)</h4>
