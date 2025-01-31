@@ -6,7 +6,7 @@
 2.從分佈點中找出相似的，就能得知這個不良品是從這台機台生產出來<br> 
 3.再從這台機台調整參數，從而改善良率<br> 
 <br>
-初始畫面:<br> 
+<h4>初始畫面:</h4>
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/b4b7c12d-5684-4563-a2d4-36e7745ef926" />
 <br><br><br> 
 <h4>STEP1: 選取機台後:</h4>
