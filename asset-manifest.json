@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/defect-trace-react/static/css/main.8f22bf34.css",
-    "main.js": "/defect-trace-react/static/js/main.6e00e2a6.js",
+    "main.css": "/defect-trace-react/static/css/main.97eb70d8.css",
+    "main.js": "/defect-trace-react/static/js/main.abf886e4.js",
     "index.html": "/defect-trace-react/index.html",
-    "main.8f22bf34.css.map": "/defect-trace-react/static/css/main.8f22bf34.css.map",
-    "main.6e00e2a6.js.map": "/defect-trace-react/static/js/main.6e00e2a6.js.map"
+    "main.97eb70d8.css.map": "/defect-trace-react/static/css/main.97eb70d8.css.map",
+    "main.abf886e4.js.map": "/defect-trace-react/static/js/main.abf886e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f22bf34.css",
-    "static/js/main.6e00e2a6.js"
+    "static/css/main.97eb70d8.css",
+    "static/js/main.abf886e4.js"
   ]
 }
