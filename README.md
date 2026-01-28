@@ -17,8 +17,8 @@ Project URL: [https://a2369355333.github.io/defect-trace-react/](https://a236935
 
 
 ## Demo
+<img width="1872" height="908" alt="image" src="https://github.com/user-attachments/assets/8406bd56-3620-4960-a542-d56d845f1b0c" />
 
-<img width="1872" height="918" alt="image" src="https://github.com/user-attachments/assets/f767420e-6e37-4817-9d2d-c224e0abc27d" />
 
 
 
