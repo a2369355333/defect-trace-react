@@ -1,10 +1,11 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Npw from "./pages/Npw";
 import Layout from "./layout/Layout";
+import React, { ReactElement } from "react";
 
-function App() {
+function App(): ReactElement {
   return (
-    <Router base="/">
+    <Router>
       <Layout>
         <Routes>
           <Route path="/" element={<Npw />} />
@@ -15,3 +16,4 @@ function App() {
 }
 
 export default App;
+

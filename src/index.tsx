@@ -4,10 +4,16 @@ import "./index.css";
 import App from "./App";
 import { SystemProvider } from "./context/SystemContext";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <SystemProvider>
-    <App />
-  </SystemProvider>
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
 );
+
+root.render(
+  <React.StrictMode>
+    <SystemProvider>
+      <App />
+    </SystemProvider>
+  </React.StrictMode>
+);
+
 
