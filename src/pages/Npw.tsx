@@ -23,27 +23,31 @@ const Npw: React.FC = () => {
   return (
     <div className="flex flex-col gap-y-10 p-5">
       {/* Chart selection panel */}
-      <div className="w-full flex flex-col items-center justify-center">
-        <Paper elevation={3} className="p-4 w-full max-w-sm text-center">
-          <span className="inline-block w-full font-bold text-xl mb-4">
+      <div className="w-full flex flex-col items-center">
+        <Paper className="p-6 w-full max-w-4xl bg-white rounded-xl shadow-lg">
+          <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
             Select Defect Charts
-          </span>
+          </h2>
 
-          {/* Render checkboxes for all charts */}
-          {data.map((v, i) => (
-            <div key={v.basicInfo.CHART_NAME} className="mb-2">
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    checked={checkedItems[i]}
-                    onChange={handleCheckboxChange(i)}
-                    color="primary"
-                  />
-                }
-                label={<Typography variant="body1">{v.basicInfo.CHART_NAME}</Typography>}
-              />
-            </div>
-          ))}
+          {/* Grid of checkboxes */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {data.map((v, i) => (
+              <div
+                key={v.basicInfo.CHART_NAME}
+                className={`flex items-center justify-between p-4 rounded-lg border cursor-pointer transition-all
+              ${checkedItems[i] ? "bg-blue-50 border-blue-400 shadow-md" : "bg-white border-gray-200 hover:shadow-md"}
+            `}
+                onClick={() => {
+                  const newChecked = [...checkedItems];
+                  newChecked[i] = !newChecked[i];
+                  setCheckedItems(newChecked);
+                }}
+              >
+                <span className="font-medium text-gray-700">{v.basicInfo.CHART_NAME}</span>
+                <Checkbox checked={checkedItems[i]} color="primary" />
+              </div>
+            ))}
+          </div>
         </Paper>
       </div>
 
